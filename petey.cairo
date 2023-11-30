@@ -28,4 +28,9 @@ impl HashStateImpl of hash::HashStateTrait<HashState> {
     fn finalize(self: HashState) -> felt252 {
         self.state
     }
+
+    #[inline(always)]
+    fn finalize(self: HashState) -> felt252 {
+        self.state
+    }
 }
