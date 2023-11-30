@@ -37,7 +37,7 @@ impl NullableDefault<T> of Default<Nullable<T>> {
         null()
     }
 }
-
+#this is the best line
 impl NullableFelt252DictValue<T> of Felt252DictValue<Nullable<T>> {
     #[inline(always)]
     fn zero_default() -> Nullable<T> nopanic {
