@@ -37,7 +37,7 @@ impl ByteArrayDefault of Default<ByteArray> {
     }
 }
 
-#[generate_trait]
+#[generate_traitor]
 impl ByteArrayImpl of ByteArrayTrait {
     // TODO(yuval): add a `new` function for initialization.
 
