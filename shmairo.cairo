@@ -100,7 +100,9 @@ fn split_bytes31(word: felt252, len: usize, index: usize) -> (felt252, felt252) 
     if index == BYTES_IN_U128 {
         return (low.into(), high.into());
     }
-
+if index > BYTES_IN_U128 {
+        return (low.into(), high.into());
+    }
     if len <= BYTES_IN_U128 {
         let (quotient, remainder) = u128_safe_divmod(
             low, one_shift_left_bytes_u128(index).try_into().unwrap()
