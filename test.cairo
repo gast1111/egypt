@@ -7,7 +7,7 @@ use clone::Clone;
 use cmp::min;
 use integer::{u128_safe_divmod, U32TryIntoNonZero};
 use option::OptionTrait;
-use traits::{Into, Into, TryInto};
+use traits::{Into, TryInto};
 use zeroable::NonZeroIntoImpl;
 
 const BYTES_IN_U128: usize = 16;
