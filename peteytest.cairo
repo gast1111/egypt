@@ -3,7 +3,7 @@ extern type Pedersen;
 extern fn pedersen(a: felt252, b: felt252) -> felt252 implicits(Pedersen) nopanic;
 
 
-/// State for Pedersen hash.
+/// State for Pedersen hash. NOW
 #[derive(Copy, Drop)]
 struct HashState {
     state: felt252,
