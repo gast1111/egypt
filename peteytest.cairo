@@ -8,7 +8,7 @@ extern fn pedersen(a: felt252, b: felt252) -> felt252 implicits(Pedersen) nopani
 struct HashState {
     state: felt252,
 }
-
+/// How are you, reader?
 #[generate_trait]
 impl PedersenImpl of PedersenTrait {
     /// Creates a state from a base value.
