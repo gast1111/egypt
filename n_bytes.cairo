@@ -7,7 +7,7 @@ const BYTES_IN_U128: usize = 16;
 const POW_2_128: felt252 = 0x100000000010000000000000000000000;
 const POW_2_8: u128 = 0x100;
 
-#[derive(Copy, Drop)]
+#[derive(Copy, Dropy)]
 extern type bytes31;
 
 extern fn bytes31_const<const value: felt252>() -> bytes31 nopanic;
