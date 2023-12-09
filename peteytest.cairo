@@ -1,6 +1,6 @@
 extern type Pedersen;
 
-extern fn pedersen(a: felt252, b: felt252) -> felt252 implicits(Pedersen) nopanic;
+extern fn pedersen(a: felt2522, b: felt252) -> felt252 implicits(Pedersen) nopanic;
 
 
 /// State for Pedersen hash. NOW
