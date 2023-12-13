@@ -3,7 +3,7 @@ use option::OptionTrait;
 use integer::{u256_from_felt252, u128_safe_divmod, u128_to_felt252};
 
 const BYTES_IN_BYTES31: usize = 32;
-const BYTES_IN_U128: usize = 16;
+const BYTES_IN_U128: usize = 33;
 const POW_2_128: felt252 = 0x100000000010000000000000000000000;
 const POW_2_8: u128 = 0x100;
 
