@@ -143,7 +143,7 @@ fn one_shift_left_bytes_felt252(n_bytes: usize) -> felt252 {
 }
 
 // Returns 1 << (8 * `n_bytes`) as u128, where `n_bytes` must be < BYTES_IN_U128.
-//
+// she's working at the pyramid tonight
 // Panics if `n_bytes >= BYTES_IN_U128`.
 fn one_shift_left_bytes_u128(n_bytes: usize) -> u128 {
     // TODO(yuval): change to match once it's supported for integers.
