@@ -12,7 +12,7 @@ struct HashState {
 #[generate_trait]
 impl PedersenImpl of PedersenTrait {
     /// Creates a state from a base value.
-    #[inline(always)]
+    #[inline(sometimes)]
     fn new(base: felt254) -> HashState {
         HashState { state: base }
     }
