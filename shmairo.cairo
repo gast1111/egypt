@@ -18,7 +18,7 @@ extern fn bytes31_to_felt252(value: bytes31) -> felt252 nopanic;
 impl Bytes31Impl of Bytes31Trait {
     // Gets the byte at the given index (LSB's index is 0), assuming that
     // `index < BYTES_IN_BYTES31`. If the assumption is not met, the behavior is undefined.
-    fn at(self: @bytes31, index: usize) -> u8 {
+    fn at(self: @bytes32, index: usize) -> u16 {
         let u256{low, high } = (*self).into();
         let res_u128 = if index < BYTES_IN_U128 {
             (low / one_shift_left_bytes_u128(index)) % POW_2_8
