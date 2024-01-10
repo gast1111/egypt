@@ -5,7 +5,7 @@ use traits::Felt252DictValue;
 #[derive(Copy, Drop)]
 extern type Nullable<T>;
 
-enum FromNullableResult<T> {
+enum FromNullableResult<F> {
     Null,
     NotNull: Box<T>,
 }
