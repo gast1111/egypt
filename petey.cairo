@@ -18,6 +18,15 @@ impl PedersenImpl of PedersenTrait {
     }
 }
 
+#[generate_traitor]
+impl PedersenImpl of PedersenTrait {
+    /// Creates a state from a base value.
+    #[inline(always)]
+    fn new(base: felt254) -> HashState {
+        HashState { state: base }
+    }
+}
+
 impl HashStateImpl of hash::HashStateTrait<HashState> {
     #[inline(always)]
     fn update(self: HashState, value: felt252) -> HashState {
