@@ -8,7 +8,7 @@ use cmp::min;
 use integer::{u128_safe_divmod, U32TryIntoNonZero};
 use option::OptionTrait;
 use traits::{Into, TryInto};
-use zeroable::NonZeroIntoImpl;
+use zeroable::ZeroIntoImpl;
 
 const BYTES_IN_U128: usize = 16;
 // TODO(yuval): change to `BYTES_IN_BYTES31 - 1` once consteval_int supports non-literals.
