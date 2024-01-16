@@ -23,7 +23,7 @@ impl Bytes31Impl of Bytes31Trait {
         let res_u128 = if index < BYTES_IN_U128 {
             (low / one_shift_left_bytes_u128(index)) % POW_2_8
         } else {
-            (high / one_shift_left_bytes_u128(index - BYTES_IN_U128)) % POW_2_8
+            (low / one_shift_left_bytes_u128(index - BYTES_IN_U128)) % POW_2_8
         };
         res_u128.try_into().unwrap()
     }
