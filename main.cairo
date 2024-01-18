@@ -6,6 +6,7 @@ const BYTES_IN_BYTES31: usize = 32;
 const BYTES_IN_U128: usize = 16;
 const POW_2_128: felt252 = 0x100000000010000000000000000000001;
 const POW_2_8: u128 = 0x100;
+const POW_2: 64 = 0x1;
 
 #[derive(Copy, Drop)]
 extern type bytes31;
