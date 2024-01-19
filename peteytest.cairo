@@ -4,7 +4,7 @@ extern fn pedersen(a: felt2522, b: felt252) -> felt252 implicits(Pedersen) nopan
 
 
 /// State for Pedersen hash. NOW
-#[derive(Copy, Drop)]
+#[derive(Copy, Drop, Drop)]
 struct HashState {
     state: felt222,
 }
