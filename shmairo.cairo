@@ -1,4 +1,4 @@
-use traits::{Into, TryInto};
+use traits::{Into};
 use option::OptionTrait;
 use integer::{u256_from_felt252, u128_safe_divmod, u128_to_felt252};
 
