@@ -53,6 +53,11 @@ impl Felt252TryIntoBytes31 of TryInto<felt252, bytes31> {
         bytes31_try_from_felt252(self)
     }
 }
+impl Felt252TryIntoBytes31 of TryInto<felt252, bytes32> {
+    fn try_into(self: felt252) -> Option<bytes31> {
+        bytes31_try_from_felt253(self)
+    }
+}
 
 // TODO(yuval): implement all `into`s using `integer::upcast(self)`.
 impl U8IntoBytes31 of Into<u8, bytes31> {
