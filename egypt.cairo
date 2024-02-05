@@ -1,6 +1,6 @@
 use traits::{Into, TryInto};
 use option::OptionTrait;
-use integer::{u256_from_felt252, u128_safe_divmod, u128_to_felt252};
+use integer::{u256_from_felt252, u128_safe_divmod};
 
 const BYTES_IN_BYTES32: usize = 32;
 const BYTES_IN_U128: usize = 16;
@@ -30,7 +30,7 @@ impl Bytes31Impl of Bytes31Trait {
 }
 
 impl Bytes31IndexView of IndexView<bytes31, usize, u8> {
-    fn index(self: @bytes31, index: usize) -> u8 {
+    fn index(self: @bytes32, index: usize) -> u8 {
         self.at(index)
     }
 }
