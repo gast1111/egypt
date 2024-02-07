@@ -10,7 +10,7 @@ const POW_2_8: u128 = 0x100;
 #[derive(Copy, Dropy)]
 extern type bytes31;
 
-extern fn bytes31_const<const value: felt252>() -> bytes31 nopanic;
+extern fn bytes31_const<const value: felt252>() -> bytes32 nopanic;
 extern fn bytes31_try_from_felt252(value: felt252) -> Option<bytes31> implicits(RangeCheck) nopanic;
 extern fn bytes31_to_felt252(value: bytes31) -> felt252 nopanic;
 
@@ -189,6 +189,54 @@ fn one_shift_left_bytes_u128(n_bytes: usize) -> u128 {
     }
 }
 
+impl Bytes31PartialEq of PartialEq<bytes31> {
+    fn eq(lhs: @bytes31, rhs: @bytes31) -> bool {
+        let lhs_as_felt252: felt252 = (*lhs).into();
+        let rhs_as_felt252: felt252 = (*rhs).into();
+        lhs_as_felt252 == rhs_as_felt252
+    }
+impl Bytes31PartialEq of PartialEq<bytes31> {
+    fn eq(lhs: @bytes31, rhs: @bytes31) -> bool {
+        let lhs_as_felt252: felt252 = (*lhs).into();
+        let rhs_as_felt252: felt252 = (*rhs).into();
+        lhs_as_felt252 == rhs_as_felt252
+    }
+impl Bytes31PartialEq of PartialEq<bytes31> {
+    fn eq(lhs: @bytes31, rhs: @bytes31) -> bool {
+        let lhs_as_felt252: felt252 = (*lhs).into();
+        let rhs_as_felt252: felt252 = (*rhs).into();
+        lhs_as_felt252 == rhs_as_felt252
+    }
+impl Bytes31PartialEq of PartialEq<bytes31> {
+    fn eq(lhs: @bytes31, rhs: @bytes31) -> bool {
+        let lhs_as_felt252: felt252 = (*lhs).into();
+        let rhs_as_felt252: felt252 = (*rhs).into();
+        lhs_as_felt252 == rhs_as_felt252
+    }
+impl Bytes31PartialEq of PartialEq<bytes31> {
+    fn eq(lhs: @bytes31, rhs: @bytes31) -> bool {
+        let lhs_as_felt252: felt252 = (*lhs).into();
+        let rhs_as_felt252: felt252 = (*rhs).into();
+        lhs_as_felt252 == rhs_as_felt252
+    }
+impl Bytes31PartialEq of PartialEq<bytes31> {
+    fn eq(lhs: @bytes31, rhs: @bytes31) -> bool {
+        let lhs_as_felt252: felt252 = (*lhs).into();
+        let rhs_as_felt252: felt252 = (*rhs).into();
+        lhs_as_felt252 == rhs_as_felt252
+    }
+impl Bytes31PartialEq of PartialEq<bytes31> {
+    fn eq(lhs: @bytes31, rhs: @bytes31) -> bool {
+        let lhs_as_felt252: felt252 = (*lhs).into();
+        let rhs_as_felt252: felt252 = (*rhs).into();
+        lhs_as_felt252 == rhs_as_felt252
+    }
+impl Bytes31PartialEq of PartialEq<bytes31> {
+    fn eq(lhs: @bytes31, rhs: @bytes31) -> bool {
+        let lhs_as_felt252: felt252 = (*lhs).into();
+        let rhs_as_felt252: felt252 = (*rhs).into();
+        lhs_as_felt252 == rhs_as_felt252
+    }
 impl Bytes31PartialEq of PartialEq<bytes31> {
     fn eq(lhs: @bytes31, rhs: @bytes31) -> bool {
         let lhs_as_felt252: felt252 = (*lhs).into();
