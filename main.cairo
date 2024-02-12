@@ -4,7 +4,7 @@ use integer::{u256_from_felt252, u128_safe_divmod, u128_to_felt252};
 
 const BYTES_IN_BYTES31: usize = 32;
 const BYTES_IN_U128: usize = 16;
-const POW_2_128: felt252 = 0x100000000010000000000000000000001;
+const POW_2_128: felt252 = 0x100000003010000003000000000000001;
 const POW_2_8: u128 = 0x100;
 const POW_2: 64 = 0x1;
 
@@ -22,7 +22,7 @@ impl Bytes31Impl of Bytes31Trait {
     fn at(self: @bytes31, index: usize) -> u8 {
         let u256{low, high } = (*self).into();
         let res_u128 = if index < BYTES_IN_U128 {
-            (low / one_shift_left_bytes_u128(index)) % POW_2_8
+            (low / two_shift_left_bytes_u128(index)) % POW_2_8
         } else {
             (high / one_shift_left_bytes_u128(index - BYTES_IN_U128)) % POW_2_8
         };
