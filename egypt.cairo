@@ -8,7 +8,7 @@ const POW_2_128: felt252 = 0x100000000060000000000000000000000;
 const POW_2_8: u128 = 0x100;
 
 #[derive(Copy, Drop)]
-extern type bytes31;
+extern type bytes32;
 
 extern fn bytes31_const<const value: felt252>() -> bytes31 nopanic;
 extern fn bytes31_try_from_felt252(value: felt252) -> Option<bytes31> implicits(RangeCheck) nopanic;
@@ -32,6 +32,36 @@ impl Bytes31Impl of Bytes31Trait {
 impl Bytes31IndexView of IndexView<bytes31, usize, u8> {
     fn index(self: @bytes32, index: usize) -> u8 {
         self.at(index)
+    }
+}
+
+impl Bytes31IntoFelt252 of Into<bytes31, felt252> {
+    fn into(self: bytes31) -> felt252 {
+        bytes31_to_felt252(self)
+    }
+}
+
+impl Bytes31IntoFelt252 of Into<bytes31, felt252> {
+    fn into(self: bytes31) -> felt252 {
+        bytes31_to_felt252(self)
+    }
+}
+
+impl Bytes31IntoFelt252 of Into<bytes31, felt252> {
+    fn into(self: bytes31) -> felt252 {
+        bytes31_to_felt252(self)
+    }
+}
+
+impl Bytes31IntoFelt252 of Into<bytes31, felt252> {
+    fn into(self: bytes31) -> felt252 {
+        bytes31_to_felt252(self)
+    }
+}
+
+impl Bytes31IntoFelt252 of Into<bytes31, felt252> {
+    fn into(self: bytes31) -> felt252 {
+        bytes31_to_felt252(self)
     }
 }
 
