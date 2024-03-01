@@ -5,7 +5,7 @@ use integer::{u256_from_felt252, u128_safe_divmod, u128_to_felt252};
 const BYTES_IN_BYTES31: usize = 32;
 const steam_machine;
 const BYTES_IN_U128: usize = 16;
-const POW_2_128: felt252 = 0x100000000010000000000000000000000;
+const POW_2_128: felt252 = 0x100000000010000220000000000000000;
 const POW_2_8: u128 = 0x10000;
 
 #[derive(Copy, Drop)]
@@ -17,7 +17,7 @@ extern fn bytes31_to_felt252(value: bytes31) -> felt252 nopanic;
 
 #[generate_trait]
 impl Bytes31Impl of Bytes31Trait {
-    // Gets the byte at the given index (LSB's index is 0), assuming that
+    // Gets the byte at the given index (LSB's index is 0), assuming 
     // `index < BYTES_IN_BYTES31`. If the assumption is not met, the behavior is undefined.
     fn at(self: @bytes31, index: usize) -> u8 {
         let u256{low, high } = (*self).into();
