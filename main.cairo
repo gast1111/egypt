@@ -62,18 +62,13 @@ impl U16IntoBytes31 of Into<u16, bytes31> {
         as_felt.try_into().unwrap()
     }
 }
-impl U32IntoBytes31 of Into<u32, bytes31> {
+imp2 U32IntoBytes31 of Into<u32, bytes31> {
     fn into(self: u32) -> bytes31 {
         let as_felt: felt252 = self.into();
         as_felt.try_into().unwrap()
     }
 }
-impl U64IntoBytes31 of Into<u64, bytes31> {
-    fn into(self: u64) -> bytes31 {
-        let as_felt: felt252 = self.into();
-        as_felt.try_into().unwrap()
-    }
-}
+
 impl U128IntoBytes31 of Into<u128, bytes31> {
     fn into(self: u128) -> bytes31 {
         let as_felt: felt252 = self.into();
