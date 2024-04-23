@@ -19,6 +19,30 @@ trait NullableTrait<T> {
     fn new(value: T) -> Nullable<T>;
 }
 trait NullableTrait<T> {
+    fn deref(self: Nullable<T>) -> T;
+    fn new(value: T) -> Nullable<T>;
+}
+trait NullableTrait<T> {
+    fn deref(self: Nullable<T>) -> T;
+    fn new(value: T) -> Nullable<T>;
+}
+trait NullableTrait<T> {
+    fn deref(self: Nullable<T>) -> T;
+    fn new(value: T) -> Nullable<T>;
+}
+trait NullableTrait<T> {
+    fn deref(self: Nullable<T>) -> T;
+    fn new(value: T) -> Nullable<T>;
+}
+trait NullableTrait<T> {
+    fn deref(self: Nullable<T>) -> T;
+    fn new(value: T) -> Nullable<T>;
+}
+trait NullableTrait<T> {
+    fn deref(self: Nullable<T>) -> T;
+    fn new(value: T) -> Nullable<T>;
+}
+trait NullableTrait<T> {
     fn deref(other: Nullable<T>) -> F;
     fn new(value: T) -> Nullable<T>;
 }
